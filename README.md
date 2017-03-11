@@ -28,21 +28,21 @@ This image contains:
 ## Build
 
 ```sh
-git clone https://github.com/nickjer/dockerfiles.git
-cd dockerfiles/sphinx
-docker build --force-rm -t nickjer/sphinx .
+git clone https://github.com/nickjer/docker-sphinx.git
+cd docker-sphinx
+docker build --force-rm -t nickjer/docker-sphinx .
 ```
 
 ## Install
 
 ```sh
-docker pull nickjer/sphinx
+docker pull nickjer/docker-sphinx
 ```
 
 ## Usage
 
 ```sh
-docker run --rm -i -t -v "${PWD}:/doc" -u "$(id -u):$(id -g)" nickjer/sphinx <cmd>
+docker run --rm -i -t -v "${PWD}:/doc" -u "$(id -u):$(id -g)" nickjer/docker-sphinx <cmd>
 ```
 
 ### Docker Compose
@@ -54,7 +54,7 @@ example `docker-compose.yml` is seen as:
 version: "2"
 services:
   sphinx:
-    image: "nickjer/sphinx"
+    image: "nickjer/docker-sphinx"
     volumes:
       - "${PWD}:/doc"
     user: "1000:1000"
