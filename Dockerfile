@@ -9,6 +9,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     python \
     texlive \
     texlive-fonts-recommended \
+    texlive-font-utils \
     texlive-lang* \
     texlive-latex-extra \
     texlive-latex-recommended \
