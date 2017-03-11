@@ -51,4 +51,8 @@ RUN wget -O /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py" \
     sphinxcontrib-googlemaps \
     sphinxcontrib-libreoffice
 
+# Stop Java from writing files in documentation source
+ENV HOME /home
+ENV _JAVA_OPTIONS -Duser.home=${HOME}
+
 WORKDIR /doc
