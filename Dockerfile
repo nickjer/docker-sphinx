@@ -29,7 +29,7 @@ RUN wget -O /opt/plantuml.jar "https://sourceforge.net/projects/plantuml/files/p
   && chmod 755 /usr/local/bin/plantuml
 
 # Install Sphinx and extras
-RUN wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \
+RUN wget -O /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py" \
   && python /tmp/get-pip.py \
   && rm /tmp/get-pip.py \
   && pip install Sphinx \
