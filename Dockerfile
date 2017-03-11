@@ -18,6 +18,10 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && rm -fr /var/cache/* \
   && rm -fr /var/lib/apt/lists/*
 
+# Patch for bug in `titlesec`
+# see: http://tex.stackexchange.com/questions/299969/titlesec-loss-of-section-numbering-with-the-new-update-2016-03-15
+RUN wget -O /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty "http://mirrors.ctan.org/macros/latex/contrib/titlesec/titlesec.sty"
+
 # Install PlantUML
 RUN wget -O /opt/plantuml.jar "https://sourceforge.net/projects/plantuml/files/plantuml.jar" --no-check-certificate \
   && printf '#!/bin/sh -e\njava -jar /opt/plantuml.jar "$@"' > /usr/local/bin/plantuml \
