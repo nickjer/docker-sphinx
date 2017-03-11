@@ -7,6 +7,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     default-jre \
     graphviz \
     python \
+    ghostscript \
     texlive \
     texlive-fonts-recommended \
     texlive-font-utils \
