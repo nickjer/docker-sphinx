@@ -49,7 +49,8 @@ RUN wget -O /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py" \
     sphinxcontrib-googleanalytics \
     sphinxcontrib-googlechart \
     sphinxcontrib-googlemaps \
-    sphinxcontrib-libreoffice
+    sphinxcontrib-libreoffice \
+    sphinxcontrib-httpdomain
 
 # Stop Java from writing files in documentation source
 ENV HOME /home
