@@ -10,7 +10,7 @@ This image contains:
   - [Sphinx Bootstrap Theme](http://ryan-roemer.github.io/sphinx-bootstrap-theme/README.html)
   - [sphinx_rtd_theme](https://github.com/rtfd/sphinx_rtd_theme)
 - A markdown parser for reStructuredText ([recommonmark](https://github.com/rtfd/recommonmark))
-- A sphinx watcher tool ([sphinx-autobuild](https://github.com/rtfd/recommonmark))
+- A sphinx watcher tool ([sphinx-autobuild](https://github.com/GaretJax/sphinx-autobuild/))
 - A variety of plugins:
   - [sphinx-prompt](https://github.com/sbrunner/sphinx-prompt)
   - [sphinxcontrib-actdiag](https://pypi.python.org/pypi/sphinxcontrib-actdiag)
