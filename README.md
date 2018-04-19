@@ -1,5 +1,9 @@
 # Docker Sphinx
 
+[![Build Status](https://travis-ci.org/nickjer/docker-sphinx.svg?branch=master)](https://travis-ci.org/nickjer/docker-sphinx)
+[![Docker Build Status](https://img.shields.io/docker/build/nickjer/docker-sphinx.svg)](https://hub.docker.com/r/nickjer/docker-sphinx/)
+[![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Docker image for [Sphinx](http://www.sphinx-doc.org/en/stable/).
 
 This image contains:
